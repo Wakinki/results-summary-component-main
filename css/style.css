@@ -1,6 +1,5 @@
-@import url(F:\___________=_Soubory_=\Frontendmentor\results-summary-component-main\assets\fonts\static\HankenGrotesk-Bold.ttf);
-@import url(F:\___________=_Soubory_=\Frontendmentor\results-summary-component-main\assets\fonts\static\HankenGrotesk-ExtraBold.ttf);
-@import url(F:\___________=_Soubory_=\Frontendmentor\results-summary-component-main\assets\fonts\static\HankenGrotesk-Medium.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
 
 * {
       margin: 0;
@@ -9,18 +8,36 @@
 }
 
 body {
-      display: inline-block;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      text-align: center;
-     /*  padding: 5% 30%; */
+      height: 100vh;
+      font-family: 'Hanken Grotesk', sans-serif;
+      
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      
 }
 
 section {
-      display: inline-block;
+      padding: 20px;
+      border-radius: 1.5em;
+      /* border: 2px solid black;*/
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      
+      width: 25vw;
+      min-width: 200px;
+      height: 50vh;
+      min-height: 300px;
 }
 
 button {
-      background-color: hsl(224, 30%, 27%);
+      background-color: hsl(252, 100%, 67%);
       color: hsl(0, 0%, 100%);
       border: none;
       padding: 0.5rem;
@@ -32,35 +49,61 @@ li {
 }
 
 .reaction {
-      padding: 0.5rem;
-      margin: 0.25rem;
       background-color: hsla(0, 100%, 67%, 0.15);
-      border-radius: 0.5em;
       color:hsl(0, 100%, 67%);
 }
 
 .memory {
-      padding: 0.5rem;
-      margin: 0.25rem;
       background-color: hsla(39, 100%, 56%, 0.15);
-      border-radius: 0.5em;
+      
 }
 
 .verbal  {
-      padding: 0.5rem;
-      margin: 0.25rem;
       background-color: hsla(166, 100%, 37%, 0.15);
-      border-radius: 0.5em;
+      
 }
 
 .visual {
-      padding: 0.5rem;
-      margin: 0.25rem;
       background-color: hsla(234, 85%, 45%, 0.15);
-      border-radius: 0.5em;
+      
 }
 
-li p {
-      display: inline-block;  
-     
+.summary-item {
+      border-radius: 0.5em;
+      padding: 0.5rem;
+      margin: 0.25rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: space-evenly;
+      flex-wrap: wrap;
 }
+ 
+
+.summary-screen {
+      
+}
+
+.result-screen {
+      text-align: center;
+      background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+      color: #ccc;
+}
+
+.result-circle {
+      background: linear-gradient(0deg, hsla(241, 72%, 46%, 0) 0%, hsla(256, 72%, 46%, 1) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      width: 250px;
+      height: 250px;
+      border-radius: 125px;
+}
+
+.large-text-result{
+      color:white;
+      font-size: 70px;
+      font-weight: bolder;
+}
+
